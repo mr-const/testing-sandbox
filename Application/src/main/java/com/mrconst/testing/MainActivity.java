@@ -39,7 +39,7 @@ public class MainActivity extends Activity {
     /** Magic constant to indicate that no value is stored for PREF_SPINNER_POS. */
     private static final int PREF_SPINNER_VALUE_ISNULL = -1;
     /** Values for display in spinner. */
-    private static final String[] SPINNER_VALUES = new String[] {
+    static final String[] SPINNER_VALUES = new String[] {
             "Select Weather...", "Sunny", "Partly Cloudy", "Cloudy", "Rain", "Snow", "Hurricane"};
 
     // Constants representing each of the options in SPINNER_VALUES. Declared package-private
