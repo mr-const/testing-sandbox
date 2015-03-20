@@ -16,7 +16,12 @@ repositories {
 
 
 dependencies {
+    compile 'com.fasterxml.jackson.core:jackson-core:2.5.0'
+    compile 'com.fasterxml.jackson.core:jackson-databind:2.5.0'
+    compile 'com.fasterxml.jackson.core:jackson-annotations:2.5.0'
     compile 'com.android.support:support-v4:22.0.0'
+    testCompile 'junit:junit:4.11'
+    testCompile 'org.assertj:assertj-core:1.7.1'
     androidTestCompile 'com.android.support.test.espresso:espresso-core:2.0'
     androidTestCompile 'com.android.support.test:testing-support-lib:0.1'
 }
@@ -40,11 +45,9 @@ android {
 
     packagingOptions {
         exclude 'LICENSE.txt'
-    }
-
-    sourceSets {
-        androidTest.setRoot('tests')
-        androidTest.java.srcDirs = ['tests/src']
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE'
     }
 
     compileOptions {

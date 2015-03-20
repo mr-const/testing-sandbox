@@ -2,7 +2,7 @@ Android Unit and Integration test sandbox
 ===================================
 
 This sandbox provides examples of using an espresso-based tests to probe the
-internal state of an Activity and robolectric unit tests (planned).
+internal state of an Activity and new android unit tests which are run on local JVM (Like robolectric).
 
 Pre-requisites
 --------------
