@@ -12,7 +12,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class GithubRootTest {
 
     @Test
-    public void GivenValidResponse_whenObjectReceived_thenDeserializedCorrectly() throws IOException {
+    public void GivenValidJsonResponse_whenObjectReceived_thenDeserializedCorrectly() throws IOException {
 
         String validJson = "{\n" +
                 "  \"current_user_url\": \"https://api.github.com/user\",\n" +
